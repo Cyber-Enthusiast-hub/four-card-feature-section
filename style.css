@@ -60,6 +60,7 @@ h2 {
 
 h1 {
   font-family: Poppins-Thin;
+  color: hsl(234, 12%, 34%);
 }
 
 p {
@@ -72,7 +73,7 @@ p {
 }
 
 main {
-  margin: 2.5rem auto;
+  margin: 3rem auto;
   display: grid;
   grid-auto-flow: row;
   gap: 2rem;
@@ -102,7 +103,11 @@ section {
 
   h1,
   h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+  }
+
+  body {
+    margin: 5rem;
   }
 }
 
