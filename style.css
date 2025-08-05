@@ -1,0 +1,145 @@
+@font-face {
+  font-family: Fraunces;
+  src: url(fonts/Fraunces/Fraunces-VariableFont_SOFT\WONK\opsz_wght.ttf);
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url(fonts/Outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Poppins-Thin;
+  src: url(fonts/Poppins/Poppins-Thin.ttf);
+}
+
+@font-face {
+  font-family: Poppins-Light;
+  src: url(fonts/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: Poppins-ExtraLight;
+  src: url(fonts/Poppins/Poppins-ExtraLight.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins;
+  margin: 3rem 2rem;
+  height: 100%;
+}
+
+header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1,
+h2 {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-family: Poppins-Thin;
+}
+
+p {
+  color: hsl(234, 12%, 34%);
+}
+
+.header-para {
+  margin: 1rem;
+  max-width: 500px;
+}
+
+main {
+  margin: 2.5rem auto;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 2rem;
+  width: fit-content;
+}
+
+section {
+  width: 100%;
+  max-width: 400px;
+  box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.1),
+    0px 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 2rem 2rem;
+  padding-bottom: 3rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: fit-content;
+}
+
+@media (min-width: 850px) {
+  main {
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
+
+  h1,
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.section-image {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+.supervisor-section {
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.team-builder-section {
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.karma-section {
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.calculator-section {
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
